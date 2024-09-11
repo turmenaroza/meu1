@@ -1,0 +1,169 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 11/09/2024
+Var
+// Seção de Declarações das variáveis 
+   PP, ph, son, pc: inteiro
+    oh: caractere
+    continuar: caractere
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+  repita
+        escreval("Bem vindo ao mercadinho Big day, onde todo day é um big day")
+        escreval("Que tipo de produto você está procurando?")
+        escreval("1 - Produtos de higiene")
+        escreval("2 - Hortifruit")
+        escreval("3 - Congelados & Enlatados")
+        escreval("4 - Sair")
+        leia(PP)
+
+        escolha (PP)
+            caso 1
+                repita
+                    escreval("Qual produto você deseja?")
+                    escreval("1 - Papel higienico")
+                    escreval("2 - Escova de dente")
+                    escreval("3 - Pasta de dente")
+                    escreval("4 - Desodorante")
+                    escreval("5 - Absorvente")
+                    escreval("6 - Sabonete")
+                    escreval("7 - Shampoo & condicionador")
+                    escreval("8 - Fio dental")
+                    escreval("9 - Outros")
+                    leia(ph)
+
+                    escolha (ph)
+                        caso 1
+                            escreval("O papel higienico Mili está custando R$15,99")
+                        caso 2
+                            escreval("O conjunto de 3 escovas de dente estão custando R$10,49")
+                        caso 3
+                            escreval("A pasta de dente colgate está custando R$4,99")
+                        caso 4
+                            escreval("O desodorante aerossol Rexona está custando R$18,49")
+                        caso 5
+                            escreval("O absorvente da marca Intimus está custando R$16,99")
+                        caso 6
+                            escreval("O sabonete Dove está custando R$4,48")
+                        caso 7
+                            escreval("O Kit Shampoo Pantene Restauração (350ml) + Condicionador Restauração (175ml) está custando R$30,99")
+                        caso 8
+                            escreval("O fio dental Hillo (100ml) está custando R$3,99")
+                        caso 9
+                            escreval("Qual outro produto você deseja?")
+                            leia(oh)
+                            escreval("Infelizmente estamos sem ", oh, " no estoque =(")
+                    fimescolha
+
+                    escreval("Você deseja continuar no departamento de Produtos de Higiene? (S/N)")
+                    leia(continuar)
+                até que (continuar <> "S")
+
+            caso 2
+                repita
+                    escreval("Qual produto você deseja?")
+                    escreval("1 - Maçã")
+                    escreval("2 - Limão")
+                    escreval("3 - Laranja")
+                    escreval("4 - Banana")
+                    escreval("5 - Kiwi")
+                    escreval("6 - Mandioca")
+                    escreval("7 - Pepino")
+                    escreval("8 - Berinjela")
+                    escreval("9 - Repolho")
+                    escreval("10 - Chuchu")
+                    escreval("11 - Cebola")
+                    escreval("12 - Alho")
+                    escreval("13 - Outros")
+                    leia(ph)
+
+                    escolha (ph)
+                        caso 1
+                            escreval("A maçã da Monica está custando R$16,90")
+                        caso 2
+                            escreval("O kilo de limão Tahiti Qualitá está custando R$8,99")
+                        caso 3
+                            escreval("O kilo de laranja Bahia está custando R$4,49")
+                        caso 4
+                            escreval("A unidade de banana prata está custando R$1,57")
+                        caso 5
+                            escreval("A unidade do kiwi verde está custando R$4,55")
+                        caso 6
+                            escreval("O kilo de mandioca está custando R$2,99")
+                        caso 7
+                            escreval("A unidade do pepino está custando R$3,90")
+                        caso 8
+                            escreval("O kilo de berinjela está custando R$2,09")
+                        caso 9
+                            escreval("O kilo de repolho verde liso está custando R$2,09")
+                        caso 10
+                            escreval("O kilo de chuchu está custando R$5,80")
+                        caso 11
+                            escreval("A unidade de cebola nacional está custando R$2,50")
+                        caso 12
+                            escreval("O alho (250g) está custando R$13,98")
+                        caso 13
+                            escreval("Qual outro produto você deseja?")
+                            leia(oh)
+                            escreval("Infelizmente estamos sem ", oh, " no estoque =(")
+                    fimescolha
+
+                    escreval("Você deseja continuar no departamento de Hortifruit? (S/N)")
+                    leia(continuar)
+                até que (continuar <> "S")
+
+            caso 3
+                repita
+                    escreval("Qual produto você deseja?")
+                    escreval("1 - Carne bovína")
+                    escreval("2 - Carne suína")
+                    escreval("3 - Sorvete")
+                    escreval("4 - Milho")
+                    escreval("5 - Ervilha")
+                    escreval("6 - Frango")
+                    escreval("7 - Nuggets")
+                    escreval("8 - Waffles")
+                    escreval("9 - Hamburger congelado")
+                    escreval("10 - Sanduíche de hamburger congelado")
+                    escreval("11 - Outros")
+                    leia(pc)
+
+                    escolha (pc)
+                        caso 1
+                            escreval("O kilo de carne bovina está custando R$27,99")
+                        caso 2
+                            escreval("O kilo de carne suína está custando R$11,99")
+                        caso 3
+                            escreval("O sorvete Kibon Chicabon (800ml) está custando R$34,90")
+                        caso 4
+                            escreval("A lata de milho (170g) está custando R$6,99")
+                        caso 5
+                            escreval("A lata de ervilha (2KG) está custando R$17,00")
+                        caso 6
+                            escreval("O kilo de frango está custando R$13,18")
+                        caso 7
+                            escreval("O pacote de nuggets (300g) está custando R$7,99")
+                        caso 8
+                            escreval("Os waffles estão custando R$14,39")
+                        caso 9
+                            escreval("Qual outro produto você deseja?")
+                            leia(oh)
+                            escreval("Infelizmente estamos sem ", oh, " no estoque =(")
+                    fimescolha
+
+                    escreval("Você deseja continuar no departamento de Congelados & Enlatados? (S/N)")
+                    leia(continuar)
+                até que (continuar <> "S")
+
+            caso 4
+                escreval("Obrigado por visitar o Mercadinho Big Day! Até logo!")
+        fimescolha
+    até que (PP = 4)
+
+
+Fimalgoritmo
